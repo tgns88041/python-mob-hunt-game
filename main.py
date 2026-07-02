@@ -11,7 +11,7 @@ class BlueMushroom(Mushroom):
 
 def main():
     # 1. 객체 생성
-    player = Player("용사", hp=100, attack_power=20, defense=5)
+    player = Player("용사", hp=100, attack_power=20)
     monster = BlueMushroom()
     battle_manager = BattleManager()
     game = Game(player=player, monster=monster)
