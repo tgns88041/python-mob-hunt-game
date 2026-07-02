@@ -5,7 +5,7 @@ from monster import Mushroom, Slime
 class Game:
     def __init__(self):
         # 몬스터와 플레이어 생성
-        self.player = Player("용사", hp=100, attack_power=20, defense=5)
+        self.player = Player("용사", hp=100, attack_power=20)
         # 기본 몬스터로 Mushroom 객체 생성 (기호에 맞춰 다른 몬스터도 가능)
         self.monster = Slime("슬라임", hp=50, attack_power=10, defense=3)
         self.battle_manager = None  # battle.py의 시스템이나 매니저에 해당하는 부분 (미사용 및 요구 사항 충족용)
