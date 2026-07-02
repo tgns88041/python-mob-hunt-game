@@ -13,7 +13,7 @@ def main():
     player = Player()
     monster = BlueMushroom()
     battle_manager = BattleManager()
-    game = Game()
+    game = Game(player=player, monster=monster)
     
     # 게임 시작
     game.start()
