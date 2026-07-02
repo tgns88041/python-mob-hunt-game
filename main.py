@@ -15,7 +15,7 @@ def main():
     battle_manager = BattleManager()
     game = Game()
     
-    # 게임 시작
+    # 게임 시작1
     game.start()
 
 if __name__ == "__main__":
