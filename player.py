@@ -1,6 +1,6 @@
 # 플레이어 클래스 정의
 class Player:
-    def __init__(self, name, hp, attack_power, defense):
+    def __init__(self, name="용사", hp=100, attack_power=20, defense=5):
         """
         Player 초기화 메서드
         :param name: 플레이어 이름 (str)
