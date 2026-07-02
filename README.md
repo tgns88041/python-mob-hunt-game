@@ -64,3 +64,14 @@ python main.py
 * **Language:** Python 3
 * **Version Control:** Git, GitHub
 * **Collaboration Tools:** GitHub Issues, Branching Strategy (`feature/` branches), Pull Requests (PR) & Review Process
+
+---
+
+## 👥 팀원 역할
+
+| 팀원 | 담당 파일 |
+|------|-----------|
+| park chelwon | player.py |
+| park kyuri | battle.py |
+| choi seoyoon | game.py |
+| lee young eun | main.py |
