@@ -1,6 +1,7 @@
 import sys
 from player import Player
-from monster import Mushroom, Slime
+from monster import Slime
+from battle import BattleManager
 
 class Game:
     def __init__(self, player=None, monster=None):
@@ -24,9 +25,9 @@ class Game:
             choice = input("원하는 메뉴 번호를 입력하세요: ").strip()
             
             if choice == "1":
-                self.player.attack(self.monster)
-                if self.monster.hp <= 0:
-                    print(f"\n축하합니다! [{self.monster.name}]을(를) 물리쳤습니다!")
+                # battle_manager의 player_attack 메서드를 이용하여 공격을 수행하고 상태를 출력
+                self.battle_manager.player_attack(self.player, self.monster)
+                if self.battle_manager.is_monster_dead(self.monster):
                     print("게임을 종료합니다.")
                     break
             elif choice == "2":
